@@ -1,5 +1,11 @@
 'use strict';
 
+/*
+* 1. Logo 设计
+* 2. 回车键复制已翻译的文本
+* 3. 发音
+* */
+
 const alfy = require('alfy');
 const md5 = require('md5');
 
@@ -10,7 +16,7 @@ const baiduTransAPI = {
 	salt: 1039057373
 };
 
-const alfredQuery = alfy.input || '好 to en';
+const alfredQuery = alfy.input || '好 to 西班牙语';
 
 const LANGUAGE_MAP = {
 	zh:	'中文',
@@ -44,10 +50,15 @@ const LANGUAGE_MAP = {
 };
 
 function checkConversionLang(str) {
+	let isConversion = false;
 	for (let key in LANGUAGE_MAP){
 		const result = new RegExp(` to ${key}$| to ${LANGUAGE_MAP[key]}$`).exec(str);
-		console.log(result, '字符串匹配结果')
+		if (result){
+			const getTargetLang = result[0].split(' to ');
+
+		}
 	}
+	return isConversion;
 }
 
 function checkIsChinese(str) {
