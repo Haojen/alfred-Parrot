@@ -49,32 +49,39 @@ const LANGUAGE_MAP = {
 	vie: '越南语',
 };
 
-function checkIsChinese(str) {
-	new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
+function checkIsChineseText(str) {
+	return new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
 }
 
-function checkConversionLang(str) {
-	let userConverLang = null;
+function checkUserDidCustomTargetLang(str) {
+	let userCustomTransLang = null;
 
 	for (let key in LANGUAGE_MAP){
 		const result = new RegExp(` to ${key}$| to ${LANGUAGE_MAP[key]}$`).exec(str);
-		if (result){
-			const getTargetLang = result[0].split(' to ')[1];
 
+		if (result){
+			userCustomTransLang = result[0].split(' to ')[1];
 		}
 	}
-	return userConverLang;
+	return userCustomTransLang;
 }
 
 function getTransLanguage(str) {
 	// 判断用户是否手动转换了目标语言，如果是的话，使用用户的设定。
-	const toUserLang = checkConversionLang(str);
-	if (toUserLang) {
-		return toUserLang
+	if (checkUserDidCustomTargetLang(str)) {
+		let userTargetLang = checkUserDidCustomTargetLang(str);
+
+		if (checkIsChineseText(userTargetLang)){
+			for (let langKay in LANGUAGE_MAP) {
+				LANGUAGE_MAP[langKay] === userTargetLang ? userTargetLang = LANGUAGE_MAP[langKay] : '';
+			}
+		}
+
+		return userTargetLang
 	}
 
 	//默认如果用户输入的是中文的话，那直接转换成英文，如果用户输入的是非中文，则默认转换成中文。
-	const isChinese = checkIsChinese(str)
+	const isChinese = checkIsChineseText(str)
 	if (isChinese) {
 		return 'en'
 	}
