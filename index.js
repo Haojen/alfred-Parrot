@@ -28,7 +28,7 @@ const LANGUAGE_MAP = {
 	fra: '法语',
 	spa: '西班牙语',
 	th:	'泰语',
-	ara:	'阿拉伯语',
+	ara: '阿拉伯语',
 	ru:	'俄语',
 	pt:	'葡萄牙语',
 	de:	'德语',
@@ -49,21 +49,32 @@ const LANGUAGE_MAP = {
 	vie: '越南语',
 };
 
+function checkIsChinese(str) {
+	new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
+}
+
 function checkConversionLang(str) {
-	let isConversion = false;
+	let userConverLang = null;
+
 	for (let key in LANGUAGE_MAP){
 		const result = new RegExp(` to ${key}$| to ${LANGUAGE_MAP[key]}$`).exec(str);
 		if (result){
-			const getTargetLang = result[0].split(' to ');
+			const getTargetLang = result[0].split(' to ')[1];
 
 		}
 	}
-	return isConversion;
+	return userConverLang;
 }
 
-function checkIsChinese(str) {
-	checkConversionLang(str)
-	const isChinese = new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
+function getTransLanguage(str) {
+	// 判断用户是否手动转换了目标语言，如果是的话，使用用户的设定。
+	const toUserLang = checkConversionLang(str);
+	if (toUserLang) {
+		return toUserLang
+	}
+
+	//默认如果用户输入的是中文的话，那直接转换成英文，如果用户输入的是非中文，则默认转换成中文。
+	const isChinese = checkIsChinese(str)
 	if (isChinese) {
 		return 'en'
 	}
@@ -75,7 +86,7 @@ let params = {
 	body: {
 		q: alfredQuery,
 		from: 'auto',
-		to: checkIsChinese(alfredQuery),
+		to: getTransLanguage(alfredQuery),
 		appid: baiduTransAPI.appid,
 		salt: baiduTransAPI.salt,
 		sign: md5(baiduTransAPI.appid + alfredQuery + baiduTransAPI.salt + baiduTransAPI.key)
