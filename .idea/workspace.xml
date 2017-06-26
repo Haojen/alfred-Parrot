@@ -19,13 +19,18 @@
     <favorites_list name="alfred-parrot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="392">
+              <caret line="80" column="47" lean-forward="true" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+              <folding>
+                <element signature="e#142#502#0" expanded="false" />
+                <element signature="e#527#668#0" expanded="false" />
+                <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
+                <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,6 +40,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>parrot</find>
+      <find>userT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,6 +172,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -205,11 +217,12 @@
       <workItem from="1498318923829" duration="662000" />
       <workItem from="1498322981979" duration="1885000" />
       <workItem from="1498362056321" duration="16273000" />
+      <workItem from="1498437105570" duration="4383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18820000" />
+    <option name="totallyTimeSpent" value="23203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -227,7 +240,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19027483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -240,6 +252,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -254,27 +267,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="e#142#502#0" expanded="false" />
+            <element signature="e#527#668#0" expanded="false" />
+            <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
+            <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/alfy/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="81" column="10" lean-forward="true" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-          <folding>
-            <marker date="1498317332000" expanded="true" signature="0:2220" ph="{&quot;name&quot;: &quot;alfy&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="192:386" ph="{&quot;name&quot;: &quot;alfy&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="405:418" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="639:742" ph="{&quot;name&quot;: &quot;Sindre Sorhus&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="753:850" ph="{&quot;run-node&quot;: &quot;run-node.sh&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="862:924" ph="{&quot;url&quot;: &quot;https://github.com/sindresorhus/alfy/issues&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="975:1308" ph="{&quot;alfred-link&quot;: &quot;^0.2.0&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1408:1514" ph="{&quot;ava&quot;: &quot;*&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1529:1552" ph="{&quot;node&quot;: &quot;&gt;=4&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1565:1648" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1725:1860" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1899:2034" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1905:2030" ph="{&quot;name&quot;: &quot;Sam Verschueren&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="2070:2152" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="2167:2196" ph="{&quot;test&quot;: &quot;xo &amp;&amp; ava&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -283,7 +292,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -335,40 +343,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-          <folding>
-            <marker date="1498317332000" expanded="true" signature="0:2220" ph="{&quot;name&quot;: &quot;alfy&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="192:386" ph="{&quot;name&quot;: &quot;alfy&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="405:418" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="639:742" ph="{&quot;name&quot;: &quot;Sindre Sorhus&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="753:850" ph="{&quot;run-node&quot;: &quot;run-node.sh&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="862:924" ph="{&quot;url&quot;: &quot;https://github.com/sindresorhus/alfy/issues&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="975:1308" ph="{&quot;alfred-link&quot;: &quot;^0.2.0&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1408:1514" ph="{&quot;ava&quot;: &quot;*&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1529:1552" ph="{&quot;node&quot;: &quot;&gt;=4&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="1565:1648" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1725:1860" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1899:2034" ph="[...]" />
-            <marker date="1498317332000" expanded="true" signature="1905:2030" ph="{&quot;name&quot;: &quot;Sam Verschueren&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="2070:2152" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1498317332000" expanded="true" signature="2167:2196" ph="{&quot;test&quot;: &quot;xo &amp;&amp; ava&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="136">
             <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -376,36 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
-          <folding>
-            <marker date="1477741728000" expanded="true" signature="14:47" ph="/*...*/" />
-            <marker date="1477741728000" expanded="true" signature="628:770" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="787:1161" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1216:1275" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1316:1617" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1386:1613" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1420:1454" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1485:1514" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1550:1581" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1713:1758" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1732:1756" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="1781:2252" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="2017:2248" ph="[...]" />
-            <marker date="1477741728000" expanded="true" signature="2018:2247" ph="{&quot;subtitle&quot;: 'Press ⌘L to see the full error and ⌘C to copy it.'...}" />
-            <marker date="1477741728000" expanded="true" signature="2167:2201" ph="{&quot;copy&quot;: copy...}" />
-            <marker date="1477741728000" expanded="true" signature="2211:2244" ph="{&quot;path&quot;: exports.icon.error...}" />
-            <marker date="1477741728000" expanded="true" signature="2278:2304" ph="{&quot;cwd&quot;: alfy.alfred.data...}" />
-            <marker date="1477741728000" expanded="true" signature="2335:2413" ph="{&quot;configName&quot;: 'cache'...}" />
-            <marker date="1477741728000" expanded="true" signature="2445:3402" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="2469:2486" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="2526:2632" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="2695:2820" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3044:3090" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3200:3303" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3222:3282" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3321:3398" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3346:3379" ph="{...}" />
-            <marker date="1477741728000" expanded="true" signature="3456:3684" ph="{&quot;get&quot;: getIcon...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -413,16 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <marker date="1498376789000" expanded="true" signature="0:706" ph="{&quot;name&quot;: &quot;alfred-parrot&quot;...}" />
-            <marker date="1498376789000" expanded="true" signature="167:261" ph="{&quot;name&quot;: &quot;haojen ma&quot;...}" />
-            <marker date="1498376789000" expanded="true" signature="276:299" ph="{&quot;node&quot;: &quot;&gt;=4&quot;...}" />
-            <marker date="1498376789000" expanded="true" signature="314:411" ph="{&quot;test&quot;: &quot;xo &amp;&amp; ava&quot;...}" />
-            <marker date="1498376789000" expanded="true" signature="424:478" ph="[...]" />
-            <marker date="1498376789000" expanded="true" signature="494:540" ph="[...]" />
-            <marker date="1498376789000" expanded="true" signature="560:607" ph="{&quot;alfy&quot;: &quot;^0.6.0&quot;...}" />
-            <marker date="1498376789000" expanded="true" signature="630:704" ph="{&quot;alfy-test&quot;: &quot;^0.3.0&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,9 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-508">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -441,7 +387,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -452,25 +397,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1487410052000" expanded="true" signature="3483:3516" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="4062:4180" ph="{&quot;name&quot;: &quot;awesome-package&quot;...}" />
-              <marker date="1487410052000" expanded="true" signature="4106:4129" ph="{&quot;test&quot;: &quot;ava&quot;...}" />
-              <marker date="1487410052000" expanded="true" signature="4152:4178" ph="{&quot;ava&quot;: &quot;^0.18.0&quot;...}" />
-              <marker date="1487410052000" expanded="true" signature="10912:10926" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14093:14107" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14142:14156" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14211:14225" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14270:14284" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14341:14355" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="14614:14628" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="22080:22098" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="22676:22750" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="22691:22748" ph="[...]" />
-              <marker date="1487410052000" expanded="true" signature="25579:25632" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="25676:25729" ph="{...}" />
-              <marker date="1487410052000" expanded="true" signature="33278:33366" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -480,9 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,15 +413,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-463">
           <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="392">
+          <caret line="80" column="47" lean-forward="true" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+          <folding>
+            <element signature="e#142#502#0" expanded="false" />
+            <element signature="e#527#668#0" expanded="false" />
+            <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
+            <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
