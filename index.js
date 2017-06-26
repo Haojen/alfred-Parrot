@@ -16,7 +16,7 @@ const baiduTransAPI = {
 	salt: 1039057373
 };
 
-const alfredQuery = alfy.input || '好 to 西班牙语';
+const alfredQuery = alfy.input || 'yes to 日语';
 
 const LANGUAGE_MAP = {
 	zh:	'中文',
@@ -68,20 +68,19 @@ function checkUserDidCustomTargetLang(str) {
 
 function getTransLanguage(str) {
 	// 判断用户是否手动转换了目标语言，如果是的话，使用用户的设定。
-	if (checkUserDidCustomTargetLang(str)) {
-		let userTargetLang = checkUserDidCustomTargetLang(str);
-
-		if (checkIsChineseText(userTargetLang)){
-			for (let langKay in LANGUAGE_MAP) {
-				LANGUAGE_MAP[langKay] === userTargetLang ? userTargetLang = LANGUAGE_MAP[langKay] : '';
+	let userCustomTargetLang = checkUserDidCustomTargetLang(str);
+	if (userCustomTargetLang) {
+		if (checkIsChineseText(userCustomTargetLang)){
+			for (let langKey in LANGUAGE_MAP) {
+				LANGUAGE_MAP[langKey] === userCustomTargetLang ? userCustomTargetLang = langKey : '';
 			}
 		}
 
-		return userTargetLang
+		return userCustomTargetLang
 	}
 
 	//默认如果用户输入的是中文的话，那直接转换成英文，如果用户输入的是非中文，则默认转换成中文。
-	const isChinese = checkIsChineseText(str)
+	const isChinese = checkIsChineseText(str);
 	if (isChinese) {
 		return 'en'
 	}
