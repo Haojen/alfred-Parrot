@@ -9,6 +9,10 @@
 const alfy = require('alfy');
 const md5 = require('md5');
 
+const exec = require('child_process').exec;
+const sayTransResult = 'say love';
+exec(sayTransResult)
+
 const LANGUAGE_MAP = {
 	zh:	'中文',
 	en:	'英语',

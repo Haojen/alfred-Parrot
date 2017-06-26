@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39ac53ac-1602-4869-82fb-729da79b1293" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.plist" afterPath="$PROJECT_DIR$/info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +24,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding>
-                <element signature="e#142#502#0" expanded="false" />
-                <element signature="e#527#668#0" expanded="false" />
+                <element signature="e#243#603#0" expanded="false" />
+                <element signature="e#628#769#0" expanded="false" />
                 <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
                 <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
               </folding>
@@ -63,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/info.plist" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -237,12 +236,12 @@
       <workItem from="1498322981979" duration="1885000" />
       <workItem from="1498362056321" duration="16273000" />
       <workItem from="1498437105570" duration="4686000" />
-      <workItem from="1498468856007" duration="4647000" />
+      <workItem from="1498468856007" duration="5089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28153000" />
+    <option name="totallyTimeSpent" value="28595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -292,8 +291,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#142#502#0" expanded="false" />
-            <element signature="e#527#668#0" expanded="false" />
+            <element signature="e#243#603#0" expanded="false" />
+            <element signature="e#628#769#0" expanded="false" />
             <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
             <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
           </folding>
@@ -305,8 +304,8 @@
         <state relative-caret-position="1121">
           <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
-            <element signature="e#142#502#0" expanded="false" />
-            <element signature="e#527#668#0" expanded="false" />
+            <element signature="e#243#603#0" expanded="false" />
+            <element signature="e#628#769#0" expanded="false" />
             <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
             <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
           </folding>
@@ -462,11 +461,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="e#142#502#0" expanded="false" />
-            <element signature="e#527#668#0" expanded="false" />
+            <element signature="e#243#603#0" expanded="false" />
+            <element signature="e#628#769#0" expanded="false" />
             <element signature="n#!!block;n#checkIsChineseText#0" expanded="false" />
             <element signature="n#!!block;n#checkUserDidCustomTargetLang#0" expanded="false" />
           </folding>
