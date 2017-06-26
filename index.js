@@ -47,7 +47,7 @@ const baiduTransAPI = {
 	salt: 1039057373
 };
 
-const alfredInputText = alfy.input || 'yes to en';
+const alfredInputText = alfy.input || 'yes to 日语';
 
 function checkIsChineseText(str) {
 	return new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
@@ -73,7 +73,7 @@ function getTransLanguage(str) {
 		targetLanguage: 'zh'
 	};
 
-	// 如果用户指定了转换语言
+	// 用户指定了转换语言
 	let userCustomTargetLang = checkUserDidCustomTargetLang(str);
 	if (userCustomTargetLang) {
 		// 转换语言的标志是中文
@@ -85,6 +85,7 @@ function getTransLanguage(str) {
 
 		alfredIO.queryText = str.split(' to ')[0];
 		alfredIO.targetLanguage = userCustomTargetLang;
+
 	}else if (checkIsChineseText(str)){
 		//默认如果用户输入的是中文的话，那直接转换成英文，如果用户输入的是非中文，则默认转换成中文。
 		alfredIO.targetLanguage = 'en'
@@ -103,7 +104,7 @@ let params = {
 		to: targetLanguage,
 		appid: baiduTransAPI.appid,
 		salt: baiduTransAPI.salt,
-		sign: md5(baiduTransAPI.appid + alfredInputText + baiduTransAPI.salt + baiduTransAPI.key)
+		sign: md5(baiduTransAPI.appid + queryText + baiduTransAPI.salt + baiduTransAPI.key)
 	}
 };
 
