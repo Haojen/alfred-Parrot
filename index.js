@@ -112,8 +112,9 @@ alfy.fetch(baiduTransAPI.url, params).then(
 	res => {
 		let result = res.trans_result.map(res => {
 			return {
-				title: res.src,
-				subtitle: res.dst
+				title: res.dst,
+				subtitle: res.src,
+				arg: res.dst
 			}
 		});
 
