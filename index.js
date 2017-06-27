@@ -3,11 +3,11 @@ const alfy = require('alfy');
 
 const fetch = require('./config');
 const {parrot} = require('./parrot_core');
-const alfredInputText = alfy.input || 'Debug to 日语';
+const inputText = alfy.input || 'Debug';
 
-const {queryText, targetLanguage} = parrot.getTransLanguage(alfredInputText);
+const {queryText, targetLanguage} = parrot.getTransLanguage(inputText);
 
-fetch.getTransitionResult(queryText, targetLanguage, 'baidu').then(res => {
+fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 	console.log(res, '返回的有道翻译结果')
 	// let result = res.trans_result.map(res => {
 	// 	return {

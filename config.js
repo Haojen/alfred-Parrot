@@ -4,7 +4,7 @@ const alfy = require('alfy');
 const API = {
 	youdao: {
 		url: 'https://openapi.youdao.com/api',
-		appKey: '0d68776be7e9be0b',
+		appid: '0d68776be7e9be0b',
 		key: 'MIbu7DGsOPdbatL9KmgycGx0qDOzQWCM',
 		salt: 1039057373
 	},
@@ -18,35 +18,22 @@ const API = {
 
 
 function getTransitionResult(query, targetLanguage, type = 'youdao') {
-	let apiBody = null;
-	let requestUrl = null;
+	const {url, appid, key, salt} = API[type];
 
-	if (type === 'youdao') {
-		const {url, appKey, key, salt} = API.youdao;
-		requestUrl = url;
-
-		apiBody	= {
-			appKey,
-			sign: md5(appKey + query + salt + key)
-		}
-	}else {
-		const {url, appid, salt, key} = API.baidu;
-
-		requestUrl = url;
-		apiBody = {
-			appid: appid,
-			key: baidu.key,
-			sign: md5(appid + query + salt + key)
-		}
-	}
-
-	const defaultBody = {
+	const defaultOption = {
 		q: query,
 		from: 'auto',
 		to: targetLanguage,
+		salt
 	};
 
-	return alfy.fetch(requestUrl,{body: Object.assign(defaultBody, apiBody)})
+	const params = {
+		[type === 'youdao'?'appKey':'appid']: appid,
+		sign: md5(appid + query + salt + key)
+	};
+
+	console.log(Object.assign(defaultOption, params))
+	return alfy.fetch(url,{body: Object.assign(defaultOption, params)})
 }
 
 exports.getTransitionResult = getTransitionResult;

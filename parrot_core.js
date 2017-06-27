@@ -23,7 +23,7 @@ const parrot = {
 		// 返回的数据格式
 		let alfredIO = {
 			queryText: str,
-			targetLanguage: 'zh'
+			targetLanguage: 'ja'
 		};
 
 		// 用户指定了转换语言
