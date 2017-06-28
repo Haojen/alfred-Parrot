@@ -1,5 +1,9 @@
+/*
+* 1 建立一份通用表，用来处理相同语言
+* */
+
 const Language = {
-	/*baidu dict start*/
+	//  百度
 	zh:	'中文',
 	en:	'英语',
 	yue: '粤语',
@@ -28,7 +32,33 @@ const Language = {
 	hu:	'匈牙利语',
 	cht: '繁体中文',
 	vie: '越南语',
-	/*baidu dict end*/
-}
 
-exports.language_map = Language
+	// 有道
+	no: '挪威语',
+	hi: '印地语',
+	id: '印度尼西亚语',
+	tr: '土耳其语'
+};
+
+const yd_language = {
+	zh: 'zh-CHS',
+	en: 'EN',
+	jp: 'ja',
+	kor: 'ko',
+	fra: 'fr',
+	spa: 'es',
+	th: 'th',
+	ara: 'ar',
+	dan: 'da',
+	fin: 'fi',
+	rom: 'ro',
+	slo: 'sk',
+	swe: 'sv',
+	no: 'no',
+	hi: 'hi',
+	id: 'id',
+	tr: 'tr'
+};
+
+exports.language_map = Language;
+exports.yd_language = yd_language;

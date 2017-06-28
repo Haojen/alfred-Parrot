@@ -1,6 +1,6 @@
 const md5 = require('md5');
 const alfy = require('alfy');
-
+const {language_map, yd_language} = require('./Language_Map');
 const API = {
 	youdao: {
 		url: 'https://openapi.youdao.com/api',
@@ -20,11 +20,15 @@ const API = {
 function getTransitionResult(query, targetLanguage, type = 'youdao') {
 	const {url, appid, key, salt} = API[type];
 
-	const defaultOption = {
+	if (type === 'youdao') {
+		targetLanguage = Object.assign(language_map, yd_language)[targetLanguage];
+	}
+
+	const defaultParams = {
 		q: query,
+		salt: salt,
 		from: 'auto',
-		to: targetLanguage,
-		salt
+		to: targetLanguage
 	};
 
 	const params = {
@@ -32,8 +36,7 @@ function getTransitionResult(query, targetLanguage, type = 'youdao') {
 		sign: md5(appid + query + salt + key)
 	};
 
-	console.log(Object.assign(defaultOption, params))
-	return alfy.fetch(url,{body: Object.assign(defaultOption, params)})
+	return alfy.fetch(url,{body: Object.assign(defaultParams, params)})
 }
 
 exports.getTransitionResult = getTransitionResult;

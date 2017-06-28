@@ -1,16 +1,16 @@
 const exec = require('child_process').exec;
-const LANGUAGE_MAP = require('./Language_Map');
+const {language_map} = require('./Language_Map');
 
 const parrot = {
 	checkIsChineseText(str) {
 		return new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
 	},
 
-	checkUserDidCustomTargetLang: function (str) {
-		let userCustomTransLang = null;
+	checkUserDidCustomTargetLang(str) {
+		let userCustomTransLang;
 
-		for (let key in LANGUAGE_MAP){
-			const result = new RegExp(` to ${key}$| to ${LANGUAGE_MAP[key]}$`).exec(str);
+		for (let key in language_map){
+			const result = new RegExp(` to ${key}$| to ${language_map[key]}$`).exec(str);
 
 			if (result){
 				userCustomTransLang = result[0].split(' to ')[1];
@@ -23,7 +23,7 @@ const parrot = {
 		// 返回的数据格式
 		let alfredIO = {
 			queryText: str,
-			targetLanguage: 'ja'
+			targetLanguage: 'zh'
 		};
 
 		// 用户指定了转换语言
@@ -31,8 +31,8 @@ const parrot = {
 		if (userCustomTargetLang) {
 			// 转换语言的标志是中文
 			if (parrot.checkIsChineseText(userCustomTargetLang)){
-				for (let langKey in LANGUAGE_MAP) {
-					LANGUAGE_MAP[langKey] === userCustomTargetLang ? userCustomTargetLang = langKey : '';
+				for (let langKey in language_map) {
+					language_map[langKey] === userCustomTargetLang ? userCustomTargetLang = langKey : '';
 				}
 			}
 
@@ -50,8 +50,7 @@ const parrot = {
 	playSound(text) {
 		exec(`say ${text}`)
 	},
+};
 
-	debug(){console.log('debug success')}
-}
+exports.parrot = parrot;
 
-exports.parrot = parrot
