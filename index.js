@@ -3,7 +3,13 @@ const alfy = require('alfy');
 
 const fetch = require('./config');
 const {parrot} = require('./parrot_core');
-const inputText = alfy.input || '你好 to jp';
+let inputText = alfy.input || ':你好';
+
+const userWantPlaySound = parrot.userWantPlaySound(inputText);
+
+if (userWantPlaySound) {
+	inputText = inputText.slice(1);
+}
 
 const {queryText, targetLanguage} = parrot.getTransLanguage(inputText);
 
@@ -17,9 +23,12 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 				return {
 					title: res.dst,
 					subtitle: res.src,
-					arg: res.dst
+					arg: res.dst,
 				}
 			});
+			if (userWantPlaySound) {
+				parrot.playSound(res.dst);
+			}
 			alfy.output(result);
 		});
 	}else {
@@ -42,17 +51,22 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 				return {
 					title,
 					subtitle: trsItem.key,
-					arg: trsItem.value[0]
+					arg: trsItem.value[0],
 				}
 			})
 		}else {
 			result = res.translation.map(trsItem => {
 				return {
 					title: trsItem,
-					arg:trsItem
+					arg:trsItem,
 				}
 			})
 		}
+
+		if (userWantPlaySound) {
+			parrot.playSound(res.translation[0]);
+		}
+
 		alfy.output(result);
 	}
 

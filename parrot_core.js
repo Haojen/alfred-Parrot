@@ -47,6 +47,10 @@ const parrot = {
 		return alfredIO
 	},
 
+	userWantPlaySound(text) {
+		return text[0] === ':' || text[0] === '：';
+	},
+
 	playSound(text) {
 		exec(`say ${text}`)
 	},
