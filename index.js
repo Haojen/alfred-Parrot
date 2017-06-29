@@ -3,18 +3,12 @@ const alfy = require('alfy');
 
 const fetch = require('./script/config');
 const {parrot} = require('./script/parrot_core');
-let inputText = alfy.input ? alfy.input.trim() : ':okay';
+const inputText = alfy.input ? alfy.input.trim() : ':okay';
 
-const userWantPlaySound = parrot.userWantPlaySound(inputText);
-
-if (userWantPlaySound) {
-	// 截取语音标识符号
-	inputText = inputText.slice(1);
-}
-
-const {queryText, targetLanguage} = parrot.getTransLanguage(inputText);
+const {queryText, targetLanguage, isPlaySound} = parrot.getTransLanguage(inputText);
 
 fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
+	//有道的查询结果
 	let result;
 
 	if (res.query && res.web) {
@@ -52,7 +46,7 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 	alfy.output(result);
 
 	// 播放声音
-	userWantPlaySound ? parrot.playSound(res.translation[0]):null;
+	isPlaySound ? parrot.playSound(res.translation[0]):null;
 }, () => {
 	fetch.getTransitionResult(queryText, targetLanguage, 'baidu').then(res => {
 		let result = res.trans_result.map(res => {
@@ -64,7 +58,7 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 		});
 
 		alfy.output(result);
-		userWantPlaySound ? parrot.playSound(res.dst):null;
+		isPlaySound ? parrot.playSound(res.dst):null;
 	}, err => {
 		alfy.output([{
 			title: err,

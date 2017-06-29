@@ -2,6 +2,8 @@ const exec = require('child_process').exec;
 const {language_map} = require('./language_map');
 
 const parrot = {
+	isPlaySound: false,
+
 	checkIsChineseText(str) {
 		return new RegExp("[\\u4E00-\\u9FFF]+", 'g').test(str);
 	},
@@ -20,10 +22,13 @@ const parrot = {
 	},
 
 	getTransLanguage(str) {
+		str = parrot.userWantPlaySound(str);
+
 		// 返回的数据格式
 		let alfredIO = {
 			queryText: str,
-			targetLanguage: 'zh'
+			targetLanguage: 'zh',
+			isPlaySound: parrot.isPlaySound
 		};
 
 		// 用户指定了转换语言
@@ -48,7 +53,12 @@ const parrot = {
 	},
 
 	userWantPlaySound(text) {
-		return text[0] === ':' || text[0] === '：';
+		parrot.isPlaySound = text[0] === ':' || text[0] === '：';
+
+		if (parrot.isPlaySound){
+			return text.slice(1)
+		}
+		return text
 	},
 
 	playSound(text) {
