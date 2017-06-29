@@ -32,4 +32,4 @@ const errorMap = {
 	401: '账户已经欠费停',
 };
 
-exports = errorMap;
+module.exports = errorMap;

@@ -60,5 +60,5 @@ const yd_language = {
 	tr: 'tr'
 };
 
-exports.language_map = Language;
-exports.yd_language = yd_language;
+module.exports.language_map = Language;
+module.exports.yd_language = yd_language;

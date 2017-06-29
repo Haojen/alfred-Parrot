@@ -37,42 +37,11 @@ const parrot = {
 		return text
 	},
 
-	// 获取最终用户输入的Text
-	getTransLanguage(str) {
-		str = parrot.userWantPlaySound(str);
-
-		// 返回的数据格式
-		let alfredIO = {
-			queryText: str,
-			targetLanguage: parrot.checkIsChineseText(str) ? 'en':'zh',
-			isPlaySound: parrot.isPlaySound
-		};
-
-		// 用户指定了转换语言
-		let targetLanguage = parrot.checkUserDidCustomTargetLang(str);
-		if (targetLanguage) {
-
-			if (parrot.checkIsChineseText(targetLanguage)){
-				// 根据中文value检索出对应的key
-				for (let key in Object.keys(language_map)){
-					if (language_map[key] === targetLanguage){
-						targetLanguage = key
-					}
-				}
-			}
-
-			alfredIO.queryText = str.split(' to ')[0];
-			alfredIO.targetLanguage = targetLanguage;
-		}
-
-		return alfredIO
-	},
-
 	playSound(text) {
 		exec(`say ${text}`)
 	},
 
-	getTransitionResult(query, targetLanguage, type = 'youdao') {
+	fetchTransResult(query, targetLanguage, type = 'youdao') {
 		const {url, appid, key, salt} = config[type];
 
 		if (type === 'youdao') {
@@ -100,7 +69,92 @@ const parrot = {
 					success(res);
 			});
 		})
-	}
+	},
+
+	// 获取最终用户输入的Text
+	getTransLanguage(str, cb) {
+		str = parrot.userWantPlaySound(str);
+
+		// 返回的数据格式
+		let alfredIO = {
+			queryText: str,
+			targetLanguage: parrot.checkIsChineseText(str) ? 'en':'zh',
+			isPlaySound: parrot.isPlaySound
+		};
+
+		// 用户指定了转换语言
+		let targetLanguage = parrot.checkUserDidCustomTargetLang(str);
+		if (targetLanguage) {
+
+			if (parrot.checkIsChineseText(targetLanguage)){
+				// 根据中文value检索出对应的key
+				for (let key in Object.keys(language_map)){
+					if (language_map[key] === targetLanguage){
+						targetLanguage = key
+					}
+				}
+			}
+
+			alfredIO.queryText = str.split(' to ')[0];
+			alfredIO.targetLanguage = targetLanguage;
+		}
+
+		parrot.fetchTransResult(alfredIO.queryText, targetLanguage).then(res => {
+			let result;
+			if (res.query && res.web) {
+				const web = res.web;
+				const query = res.query;
+				const basic = res.basic;
+				const explainsDetail = basic ? basic.explains.join('') : '';
+				const explains = `;${basic ? basic.phonetic : ''}`;
+
+				res.translation.push(`[${explainsDetail}]`);
+
+				web.unshift({
+					value: res.translation,
+					key: query + explains
+				});
+
+				result = web.map(trsItem => {
+					let title = trsItem.value.join();
+					return {
+						title,
+						subtitle: trsItem.key,
+						arg: trsItem.value[0],
+					}
+				})
+			}else {
+				// 非中译英，英译中的结果
+				result = res.translation.map(trsItem => {
+					return {
+						title: trsItem,
+						arg:trsItem,
+					}
+				})
+			}
+			cb&&cb(result);
+			parrot.isPlaySound ? parrot.playSound(res.translation[0]):null;
+
+		}, () => {
+			parrot.fetchTransResult(alfredIO.queryText, targetLanguage, 'baidu').then(res => {
+				let result = res.trans_result.map(res => {
+					return {
+						title: res.dst,
+						subtitle: res.src,
+						arg: res.dst,
+					}
+				});
+
+				cb&&cb(result);
+				parrot.isPlaySound ? parrot.playSound(res.dst):null;
+			}, err => {
+				cb&&cb([{
+					title: err,
+					arg: err
+				}])
+			});
+		})
+	},
 };
 
 exports.parrot = parrot;
