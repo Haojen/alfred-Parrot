@@ -3,7 +3,7 @@ const alfy = require('alfy');
 
 const fetch = require('./config');
 const {parrot} = require('./parrot_core');
-let inputText = alfy.input || ':你好';
+let inputText = alfy.input ? alfy.input.trim() : ':okay';
 
 const userWantPlaySound = parrot.userWantPlaySound(inputText);
 
@@ -19,6 +19,15 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 	// 如果有道无法进行翻译，则尝试调用百度接口
 	if (res.errorCode !== '0'){
 		fetch.getTransitionResult(queryText, targetLanguage, 'baidu').then(res => {
+			result = [{
+				title: '查询中..',
+				subtitle: '请稍等'
+			}];
+
+			if (res.error_code !== '52000') {
+				return
+			}
+
 			result = res.trans_result.map(res => {
 				return {
 					title: res.dst,
@@ -26,9 +35,11 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 					arg: res.dst,
 				}
 			});
+
 			if (userWantPlaySound) {
 				parrot.playSound(res.dst);
 			}
+
 			alfy.output(result);
 		});
 	}else {
@@ -39,7 +50,7 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 			const explainsDetail = basic?basic.explains.join(''):'';
 			const explains = `; ${basic ? basic.phonetic : ''}`;
 
-			res.translation.push(`[${explainsDetail}]`)
+			res.translation.push(`[${explainsDetail}]`);
 
 			web.unshift({
 				value: res.translation,
