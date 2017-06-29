@@ -1,5 +1,5 @@
 const exec = require('child_process').exec;
-const {language_map} = require('./Language_Map');
+const {language_map} = require('./language_map');
 
 const parrot = {
 	checkIsChineseText(str) {

@@ -1,13 +1,14 @@
 'use strict';
 const alfy = require('alfy');
 
-const fetch = require('./config');
-const {parrot} = require('./parrot_core');
+const fetch = require('./script/config');
+const {parrot} = require('./script/parrot_core');
 let inputText = alfy.input ? alfy.input.trim() : ':okay';
 
 const userWantPlaySound = parrot.userWantPlaySound(inputText);
 
 if (userWantPlaySound) {
+	// 截取语音标识符号
 	inputText = inputText.slice(1);
 }
 
