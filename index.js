@@ -7,7 +7,7 @@ const inputText = alfy.input ? alfy.input.trim() : ':okay';
 
 const {queryText, targetLanguage, isPlaySound} = parrot.getTransLanguage(inputText);
 
-fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
+parrot.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 	//有道的查询结果
 	let result;
 
@@ -15,8 +15,8 @@ fetch.getTransitionResult(queryText, targetLanguage, 'youdao').then(res => {
 		const web = res.web;
 		const query = res.query;
 		const basic = res.basic;
-		const explainsDetail = basic?basic.explains.join(''):'';
-		const explains = `; ${basic ? basic.phonetic : ''}`;
+		const explainsDetail = basic ? basic.explains.join('') : '';
+		const explains = `;${basic ? basic.phonetic : ''}`;
 
 		res.translation.push(`[${explainsDetail}]`);
 
