@@ -15,7 +15,8 @@
   "scripts": {
     "test": "xo && ava",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "dev": "NODE_ENV=development node index"
   },
   "files": [
     "index.js",
