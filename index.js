@@ -10,4 +10,6 @@ if (process.env.NODE_ENV === 'development') {
 
 alfredNotifier();
 
-parrot.getTransLanguage(alfy.input.trim(), result => alfy.output(result));
+parrot.getTransLanguage(alfy.input.trim(), result => {
+	alfy.output(result)
+});

@@ -73,6 +73,17 @@ const parrot = {
 
 	// 获取最终用户输入的Text
 	getTransLanguage(str, cb) {
+		const {appid, key} = config['youdao'];
+
+		if (!appid || !key) {
+			cb&&cb([{
+				title: '请先在 workflow 中配置有道翻译',
+				subtitle: ''
+			}]);
+
+			return
+		}
+
 		str = parrot.userWantPlaySound(str);
 
 		// 返回的数据格式
@@ -136,6 +147,17 @@ const parrot = {
 			parrot.isPlaySound ? parrot.playSound(res.translation[0]):null;
 
 		}, () => {
+			const {appid, key} = config['baidu'];
+
+			if (!appid || !key) {
+				cb&&cb([{
+					title: '请先在 workflow 中配置百度翻译',
+					subtitle: ''
+				}]);
+
+				return
+			}
+
 			parrot.fetchTransResult(alfredIO.queryText, targetLanguage, 'baidu').then(res => {
 				let result = res.trans_result.map(res => {
 					return {
