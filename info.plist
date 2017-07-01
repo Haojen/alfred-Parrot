@@ -43,7 +43,7 @@
 			<key>uid</key>
 			<string>EC852E98-A9AC-49EE-ABF8-DF8143EC9567</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -110,5 +110,12 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>config_youdao</key>
+		<string>{"appid": "0d68776be7e9be0b","key":"MIbu7DGsOPdbatL9KmgycGx0qDOzQWCM"}</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 </dict>
 </plist>
