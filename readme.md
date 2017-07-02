@@ -14,7 +14,7 @@ $ npm install --global alfred-parrot
 
 ## Usage
 
-In Alfred, type `parrot`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `fy`, <kbd>Enter</kbd>, and your query.
 
 
 ## License

@@ -1,9 +1,9 @@
 {
   "name": "alfred-parrot",
-  "version": "0.0.0",
-  "description": "My extraordinary module",
+  "version": "0.1.0",
+  "description": "Alfred workflow 翻译插件",
   "license": "MIT",
-  "repository": "haojen/alfred-parrot",
+  "repository": "https://github.com/haojen/alfred-parrot",
   "author": {
     "name": "haojen ma",
     "email": "ehazomm@gmail.com",
@@ -19,6 +19,7 @@
     "dev": "NODE_ENV=development node index"
   },
   "files": [
+    "script",
     "index.js",
     "icon.png",
     "info.plist"
@@ -26,10 +27,11 @@
   "keywords": [
     "alfred",
     "workflow",
-    "alfy"
+    "alfy",
+    "parrot",
+    "翻译"
   ],
   "dependencies": {
-    "alfred-notifier": "^0.2.1",
     "alfy": "^0.6.0",
     "md5": "^2.2.1"
   },

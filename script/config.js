@@ -1,9 +1,5 @@
 const env = process.env;
-/*
-  baidu
-* appid:'20170625000060222'
-* key: '2dlAYT1dFruhnrQj7yWL'
-* */
+
 let user_yd = {
 	key: '',
 	appid: ''

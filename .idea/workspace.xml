@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="39ac53ac-1602-4869-82fb-729da79b1293" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.plist" afterPath="$PROJECT_DIR$/info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/parrot_core.js" afterPath="$PROJECT_DIR$/script/parrot_core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,22 +23,13 @@
     <favorites_list name="alfred-parrot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="parrot_core.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
+            <state relative-caret-position="817">
               <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
-              <folding>
-                <element signature="e#319#381#0" expanded="false" />
-                <element signature="e#439#695#0" expanded="false" />
-                <element signature="e#739#872#0" expanded="false" />
-                <element signature="e#892#918#0" expanded="false" />
-                <element signature="e#1923#2045#0" expanded="false" />
-                <element signature="e#2150#2466#0" expanded="false" />
-                <element signature="e#2588#3104#0" expanded="false" />
-                <element signature="e#3109#3249#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,18 +37,104 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="304">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/alfy/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update-notification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/alfy/lib/update-notification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/read-pkg-up/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1498996203000" expanded="true" signature="0:134843" ph="{&quot;name&quot;: &quot;alfred-parrot&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="126303:134841" ph="{...}" />
+                <marker date="1498996203000" expanded="true" signature="126332:126527" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="126547:126736" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="126751:126930" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="126950:127139" ph="{&quot;version&quot;: &quot;0.3.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="127159:127348" ph="{&quot;version&quot;: &quot;0.0.6&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="127362:127539" ph="{&quot;version&quot;: &quot;0.0.3&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="127564:127763" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="127782:127950" ph="{&quot;version&quot;: &quot;3.0.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="127974:128152" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="128177:128376" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="128399:128575" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="128594:128762" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="128786:128964" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="128978:129155" ph="{&quot;version&quot;: &quot;2.0.3&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="129193:129399" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="129414:129576" ph="{&quot;version&quot;: &quot;1.2.14&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="129597:129788" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="129806:129991" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="130007:130169" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="130184:130363" ph="{&quot;version&quot;: &quot;0.2.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="130390:130655" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="130680:131153" ph="{&quot;version&quot;: &quot;2.2.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="130897:131147" ph="{...}" />
+                <marker date="1498996203000" expanded="true" signature="130924:131139" ph="{&quot;version&quot;: &quot;5.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="131172:131359" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="131380:131571" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="131591:131761" ph="{&quot;version&quot;: &quot;8.2.2&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="131777:131941" ph="{&quot;version&quot;: &quot;0.1.27&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="131953:132611" ph="{&quot;version&quot;: &quot;0.17.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="132146:132605" ph="{...}" />
+                <marker date="1498996203000" expanded="true" signature="132169:132376" ph="{&quot;version&quot;: &quot;5.0.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="132396:132597" ph="{&quot;version&quot;: &quot;6.1.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="132628:134462" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="132829:134456" ph="{...}" />
+                <marker date="1498996203000" expanded="true" signature="132850:133053" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="133081:133298" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="133320:133525" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="133548:133755" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="133777:133982" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="134007:134218" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="134241:134448" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="134477:134656" ph="{&quot;version&quot;: &quot;4.0.1&quot;...}" />
+                <marker date="1498996203000" expanded="true" signature="134673:134837" ph="{&quot;version&quot;: &quot;2.1.2&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -80,6 +158,8 @@
       <find>console</find>
       <find>API</find>
       <find>parrot</find>
+      <find>version</find>
+      <find>0.0.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,9 +176,10 @@
         <option value="$PROJECT_DIR$/script/error_map.js" />
         <option value="$PROJECT_DIR$/script/language_map.js" />
         <option value="$PROJECT_DIR$/script/config.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/script/parrot_core.js" />
         <option value="$PROJECT_DIR$/info.plist" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -143,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,9 +250,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfred-parrot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfred-parrot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfred-parrot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfred-parrot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,7 +295,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="c&#9;FILE&#9;file:///Users/Haojen/Documents/Dev/alfred-parrot/node_modules/alfred-notifier/check.js&#10;check&#9;FILE&#9;file:///Users/Haojen/Documents/Dev/alfred-parrot/node_modules/alfred-notifier/check.js" />
+    <property name="SearchEverywhereHistoryKey" value="ch&#9;FILE&#9;file:///Users/Haojen/Documents/Dev/alfred-parrot/node_modules/alfred-notifier/check.js&#10;c&#9;FILE&#9;file:///Users/Haojen/Documents/Dev/alfred-parrot/node_modules/alfred-notifier/check.js&#10;check&#9;FILE&#9;file:///Users/Haojen/Documents/Dev/alfred-parrot/node_modules/alfred-notifier/check.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -303,12 +416,13 @@
       <workItem from="1498793180428" duration="2777000" />
       <workItem from="1498818745590" duration="3143000" />
       <workItem from="1498911657609" duration="4047000" />
-      <workItem from="1498930124290" duration="592000" />
+      <workItem from="1498930124290" duration="2194000" />
+      <workItem from="1498979670153" duration="674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80216000" />
+    <option name="totallyTimeSpent" value="82492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -326,13 +440,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14164905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.369863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -353,38 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#319#381#0" expanded="false" />
-            <element signature="e#439#695#0" expanded="false" />
-            <element signature="e#739#872#0" expanded="false" />
-            <element signature="e#892#918#0" expanded="false" />
-            <element signature="e#1923#2045#0" expanded="false" />
-            <element signature="e#2150#2466#0" expanded="false" />
-            <element signature="e#2588#3104#0" expanded="false" />
-            <element signature="e#3109#3249#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -518,28 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/alfy/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -692,20 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/alfred-notifier/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/alfred-notifier/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -713,42 +759,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info.plist">
+    <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1264">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        <state relative-caret-position="817">
+          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#319#381#0" expanded="false" />
-            <element signature="e#439#695#0" expanded="false" />
-            <element signature="e#739#872#0" expanded="false" />
-            <element signature="e#892#918#0" expanded="false" />
-            <element signature="e#1923#2045#0" expanded="false" />
-            <element signature="e#2150#2466#0" expanded="false" />
-            <element signature="e#2588#3104#0" expanded="false" />
-            <element signature="e#3109#3249#0" expanded="false" />
+            <marker date="1498996203000" expanded="true" signature="0:134843" ph="{&quot;name&quot;: &quot;alfred-parrot&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="126303:134841" ph="{...}" />
+            <marker date="1498996203000" expanded="true" signature="126332:126527" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="126547:126736" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="126751:126930" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="126950:127139" ph="{&quot;version&quot;: &quot;0.3.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="127159:127348" ph="{&quot;version&quot;: &quot;0.0.6&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="127362:127539" ph="{&quot;version&quot;: &quot;0.0.3&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="127564:127763" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="127782:127950" ph="{&quot;version&quot;: &quot;3.0.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="127974:128152" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="128177:128376" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="128399:128575" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="128594:128762" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="128786:128964" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="128978:129155" ph="{&quot;version&quot;: &quot;2.0.3&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="129193:129399" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="129414:129576" ph="{&quot;version&quot;: &quot;1.2.14&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="129597:129788" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="129806:129991" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="130007:130169" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="130184:130363" ph="{&quot;version&quot;: &quot;0.2.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="130390:130655" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="130680:131153" ph="{&quot;version&quot;: &quot;2.2.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="130897:131147" ph="{...}" />
+            <marker date="1498996203000" expanded="true" signature="130924:131139" ph="{&quot;version&quot;: &quot;5.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="131172:131359" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="131380:131571" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="131591:131761" ph="{&quot;version&quot;: &quot;8.2.2&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="131777:131941" ph="{&quot;version&quot;: &quot;0.1.27&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="131953:132611" ph="{&quot;version&quot;: &quot;0.17.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="132146:132605" ph="{...}" />
+            <marker date="1498996203000" expanded="true" signature="132169:132376" ph="{&quot;version&quot;: &quot;5.0.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="132396:132597" ph="{&quot;version&quot;: &quot;6.1.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="132628:134462" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="132829:134456" ph="{...}" />
+            <marker date="1498996203000" expanded="true" signature="132850:133053" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="133081:133298" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="133320:133525" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="133548:133755" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="133777:133982" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="134007:134218" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="134241:134448" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="134477:134656" ph="{&quot;version&quot;: &quot;4.0.1&quot;...}" />
+            <marker date="1498996203000" expanded="true" signature="134673:134837" ph="{&quot;version&quot;: &quot;2.1.2&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/alfred-notifier/check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state relative-caret-position="327">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/alfred-notifier/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.plist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/alfy/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/alfy/lib/update-notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/read-pkg-up/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
