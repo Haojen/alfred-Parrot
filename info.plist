@@ -25,7 +25,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>parrot</string>
+	<string>Parrot</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -77,7 +77,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>My extraordinary module</string>
+				<string>...</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

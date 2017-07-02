@@ -78,7 +78,7 @@ const parrot = {
 		if (!appid || !key) {
 			cb&&cb([{
 				title: '请先在 workflow 中配置有道翻译',
-				subtitle: ''
+				subtitle: '在尝试使用有道翻译时遇到了这个问题, 解决方法请看使用文档'
 			}]);
 
 			return
@@ -152,7 +152,7 @@ const parrot = {
 			if (!appid || !key) {
 				cb&&cb([{
 					title: '请先在 workflow 中配置百度翻译',
-					subtitle: ''
+					subtitle: '在尝试使用百度作为备用翻译时遇到了这个问题, 解决方法请看使用文档'
 				}]);
 
 				return
