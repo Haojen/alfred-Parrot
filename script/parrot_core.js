@@ -3,7 +3,7 @@ const alfy = require('alfy');
 const config = require('./config');
 const errorMap = require('./error_map');
 const exec = require('child_process').exec;
-const {language_map, yd_language} = require('./language_map');
+const language_map = require('./language_map');
 
 const parrot = {
 	isPlaySound: false,
@@ -15,16 +15,48 @@ const parrot = {
 
 	// 检测用户是否指定了转换目标语言
 	checkUserDidCustomTargetLang(str) {
-		let userCustomTransLang;
+		let targetLanguage;
 
-		for (let key in language_map){
-			const result = new RegExp(` to ${key}$| to ${language_map[key]}$`).exec(str);
+		// 先循环查找有道
+		for (let obj in language_map.yd){
+			const result = new RegExp(` to ${obj.key}$| to ${language_map.yd[obj.chineseText]}$`).exec(str);
 
 			if (result){
-				userCustomTransLang = result[0].split(' to ')[1];
+				targetLanguage = result[0].split(' to ')[1];
 			}
 		}
-		return userCustomTransLang;
+
+		// 如果在有道里不存在对应的,则在百度里查找
+		if (!targetLanguage) {
+			for (let obj in Object.keys(language_map.bd)) {
+				const result = new RegExp(` to ${obj.key}$| to ${language_map.bd[obj.chineseText]}$`).exec(str);
+				if (result){
+					targetLanguage = result[0].split(' to ')[1];
+				}
+			}
+		}
+
+		if (targetLanguage && parrot.checkIsChineseText(targetLanguage)){
+			// 根据中文value检索出对应的key
+			for (let key in Object.keys(language_map.yd)){
+				if (language_map.yd[key].chineseText === str){
+					targetLanguage = language_map.yd[key].key
+				}
+			}
+		}
+
+		let query;
+		if (targetLanguage) {
+			query = str.split(' to ')[0];
+		}else {
+			query = str;
+			targetLanguage =  parrot.checkIsChineseText(str) ? 'en':'zh'
+		}
+
+		return {
+			queryText: query,
+			targetLanguage: targetLanguage
+		};
 	},
 
 	// 检测用户是否要播放单词
@@ -44,10 +76,6 @@ const parrot = {
 	fetchTransResult(query, targetLanguage, type = 'youdao') {
 		const {url, appid, key, salt} = config[type];
 
-		if (type === 'youdao') {
-			targetLanguage = Object.assign(language_map, yd_language)[targetLanguage];
-		}
-
 		const defaultParams = {
 			q: query,
 			salt: salt,
@@ -60,13 +88,11 @@ const parrot = {
 			sign: md5(appid + query + salt + key)
 		};
 
-		return alfy.fetch(url,{
-			body: Object.assign(defaultParams, params)
-		}).then( res => {
+		return alfy.fetch(url,{body: Object.assign(defaultParams, params)}).then(res => {
 			return new Promise((success, fail) => {
-				errorMap[res.errorCode||res.error_code] ?
-					fail(errorMap[res.errorCode||res.error_code]):
-					success(res);
+				errorMap[res.errorCode||res.error_code]
+				? fail(errorMap[res.errorCode||res.error_code])
+				: success(res);
 			});
 		})
 	},
@@ -81,37 +107,17 @@ const parrot = {
 				subtitle: '在尝试使用有道翻译时遇到了这个问题, 解决方法请看使用文档'
 			}]);
 
-			return
+			return;
 		}
 
 		str = parrot.userWantPlaySound(str);
 
-		// 返回的数据格式
-		let alfredIO = {
-			queryText: str,
-			targetLanguage: parrot.checkIsChineseText(str) ? 'en':'zh',
-			isPlaySound: parrot.isPlaySound
-		};
-
 		// 用户指定了转换语言
-		let targetLanguage = parrot.checkUserDidCustomTargetLang(str);
-		if (targetLanguage) {
+		let alfredIO = parrot.checkUserDidCustomTargetLang(str);
 
-			if (parrot.checkIsChineseText(targetLanguage)){
-				// 根据中文value检索出对应的key
-				for (let key in Object.keys(language_map)){
-					if (language_map[key] === targetLanguage){
-						targetLanguage = key
-					}
-				}
-			}
-
-			alfredIO.queryText = str.split(' to ')[0];
-			alfredIO.targetLanguage = targetLanguage;
-		}
-
-		parrot.fetchTransResult(alfredIO.queryText, targetLanguage).then(res => {
+		parrot.fetchTransResult(alfredIO.queryText, alfredIO.targetLanguage).then(res => {
 			let result;
+
 			if (res.query && res.web) {
 				const web = res.web;
 				const query = res.query;
@@ -158,7 +164,7 @@ const parrot = {
 				return
 			}
 
-			parrot.fetchTransResult(alfredIO.queryText, targetLanguage, 'baidu').then(res => {
+			parrot.fetchTransResult(alfredIO.queryText, alfredIO.targetLanguage, 'baidu').then(res => {
 				let result = res.trans_result.map(res => {
 					return {
 						title: res.dst,

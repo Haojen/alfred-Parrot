@@ -62,11 +62,11 @@ const language_map = {
 		},
 		kor: {
 			key: 'zh-CHS',
-			chineseText: ''
+			chineseText: '日语'
 		},
 		fra: {
-			key: 'zh-CHS',
-			chineseText: ''
+			key: 'fra',
+			chineseText: '法语'
 		},
 		spa: {
 			key: 'spa',
@@ -83,5 +83,4 @@ const language_map = {
 	}
 };
 
-module.exports.language_map = Language;
-module.exports.yd_language = yd_language;
+module.exports = language_map;
