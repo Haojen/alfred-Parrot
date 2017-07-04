@@ -14,48 +14,47 @@ const parrot = {
 	},
 
 	// 检测用户是否指定了转换目标语言
-	checkUserDidCustomTargetLang(str) {
+	checkUserDidCustomTargetLang(str, type) {
 		let targetLanguage;
 
-		// 先循环查找有道
-		for (let obj in language_map.yd){
-			const result = new RegExp(` to ${obj.key}$| to ${language_map.yd[obj.chineseText]}$`).exec(str);
+		const lang_map = Object.keys(language_map[type]);
+
+		for (let index in lang_map ) {
+			const result = new RegExp(` to ${lang_map[index]}$| to ${language_map[type][lang_map[index]].chineseText}$`).exec(str);
 
 			if (result){
 				targetLanguage = result[0].split(' to ')[1];
+
 			}
 		}
 
-		// 如果在有道里不存在对应的,则在百度里查找
-		if (!targetLanguage) {
-			for (let obj in Object.keys(language_map.bd)) {
-				const result = new RegExp(` to ${obj.key}$| to ${language_map.bd[obj.chineseText]}$`).exec(str);
-				if (result){
-					targetLanguage = result[0].split(' to ')[1];
-				}
-			}
-		}
-
-		if (targetLanguage && parrot.checkIsChineseText(targetLanguage)){
-			// 根据中文value检索出对应的key
-			for (let key in Object.keys(language_map.yd)){
-				if (language_map.yd[key].chineseText === str){
-					targetLanguage = language_map.yd[key].key
-				}
-			}
-		}
-
-		let query;
 		if (targetLanguage) {
-			query = str.split(' to ')[0];
+			str =  str.split(' to ')[0];
+
+			if (parrot.checkIsChineseText(targetLanguage)) {
+
+				for (let index in lang_map){
+					let key = lang_map[index];
+					let dict = language_map[type][key];
+
+					if (dict.chineseText === targetLanguage){
+						targetLanguage = dict.key
+					}
+				}
+
+
+			}else {
+				targetLanguage = language_map[type][targetLanguage].key;
+
+			}
 		}else {
-			query = str;
-			targetLanguage =  parrot.checkIsChineseText(str) ? 'en':'zh'
+			targetLanguage = parrot.checkIsChineseText(str) ? 'en':'zh'
 		}
+
 
 		return {
-			queryText: query,
-			targetLanguage: targetLanguage
+			query: str,
+			targetLanguage
 		};
 	},
 
@@ -73,9 +72,10 @@ const parrot = {
 		exec(`say ${text}`)
 	},
 
-	fetchTransResult(query, targetLanguage, type = 'youdao') {
+	fetchTransResult(str, type = 'youdao') {
 		const {url, appid, key, salt} = config[type];
 
+		const {query, targetLanguage} = parrot.checkUserDidCustomTargetLang(str, type);
 		const defaultParams = {
 			q: query,
 			salt: salt,
@@ -113,9 +113,7 @@ const parrot = {
 		str = parrot.userWantPlaySound(str);
 
 		// 用户指定了转换语言
-		let alfredIO = parrot.checkUserDidCustomTargetLang(str);
-
-		parrot.fetchTransResult(alfredIO.queryText, alfredIO.targetLanguage).then(res => {
+		parrot.fetchTransResult(str).then(res => {
 			let result;
 
 			if (res.query && res.web) {

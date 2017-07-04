@@ -1,9 +1,5 @@
-/*
-* 1 建立一份通用表，用来处理相同语言
-* */
-
 const language_map = {
-	yd : {
+	youdao : {
 		zh: {
 			key: 'zh-CHS',
 			chineseText: '中文'
@@ -21,7 +17,7 @@ const language_map = {
 			chineseText: '韩语'
 		},
 		fra: {
-			key: 'fra',
+			key: 'fr',
 			chineseText: '法语'
 		},
 		spa: {
@@ -39,7 +35,7 @@ const language_map = {
 
 	},
 
-	bd : {
+	baidu : {
 		zh: {
 			key: 'zh',
 			chineseText: '中文'
@@ -61,8 +57,8 @@ const language_map = {
 			chineseText: ''
 		},
 		kor: {
-			key: 'zh-CHS',
-			chineseText: '日语'
+			key: ' kor',
+			chineseText: '韩语'
 		},
 		fra: {
 			key: 'fra',

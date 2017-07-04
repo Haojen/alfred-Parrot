@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39ac53ac-1602-4869-82fb-729da79b1293" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/language_map.js" afterPath="$PROJECT_DIR$/script/language_map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/parrot_core.js" afterPath="$PROJECT_DIR$/script/parrot_core.js" />
     </list>
@@ -21,61 +20,43 @@
     <favorites_list name="alfred-parrot" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="language_map.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/script/language_map.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="parrot_core.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="parrot_core.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="86">
-                  <caret line="115" column="64" lean-forward="true" selection-start-line="115" selection-start-column="64" selection-end-line="115" selection-end-column="64" />
-                  <folding>
-                    <element signature="e#304#366#0" expanded="false" />
-                    <element signature="e#424#1455#0" expanded="false" />
-                    <element signature="e#1499#1632#0" expanded="false" />
-                    <element signature="e#1652#1678#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="language_map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/language_map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parrot_core.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+              <folding>
+                <element signature="e#1304#1437#0" expanded="false" />
+                <element signature="e#1457#1483#0" expanded="false" />
+                <element signature="e#2462#3261#0" expanded="false" />
+                <element signature="e#3269#3860#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,15 +76,16 @@
       <find>version</find>
       <find>0.0.</find>
       <find>unref</find>
-      <find>console</find>
       <find>yd_language</find>
       <find>Object</find>
       <find>language</find>
       <find>fetchTransResult</find>
       <find>checkIsChineseText</find>
       <find>isPlaySound</find>
-      <find>checkUserDidCustomTargetLang</find>
       <find>alfredIO</find>
+      <find>console</find>
+      <find>console.log</find>
+      <find>checkUserDidCustomTargetLang</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,8 +132,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-132" />
+    <option name="y" value="-1200" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -335,12 +319,12 @@
       <workItem from="1498930124290" duration="2194000" />
       <workItem from="1498979670153" duration="5882000" />
       <workItem from="1499048406075" duration="2950000" />
-      <workItem from="1499069227087" duration="4226000" />
+      <workItem from="1499069227087" duration="17275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94876000" />
+    <option name="totallyTimeSpent" value="107925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +336,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-132" y="-1200" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14164905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -731,31 +715,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/language_map.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="-8">
+          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/script/language_map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="301">
+          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/parrot_core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="115" column="64" lean-forward="true" selection-start-line="115" selection-start-column="64" selection-end-line="115" selection-end-column="64" />
+        <state relative-caret-position="522">
+          <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding>
-            <element signature="e#304#366#0" expanded="false" />
-            <element signature="e#424#1455#0" expanded="false" />
-            <element signature="e#1499#1632#0" expanded="false" />
-            <element signature="e#1652#1678#0" expanded="false" />
+            <element signature="e#1304#1437#0" expanded="false" />
+            <element signature="e#1457#1483#0" expanded="false" />
+            <element signature="e#2462#3261#0" expanded="false" />
+            <element signature="e#3269#3860#0" expanded="false" />
           </folding>
         </state>
       </provider>
