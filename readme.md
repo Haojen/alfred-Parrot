@@ -1,6 +1,7 @@
-# alfred-parrot [![Build Status](https://travis-ci.org/haojen/alfred-parrot.svg?branch=master)](https://travis-ci.org/haojen/alfred-parrot)
+# alfred-parrot
 
-<img src="http://o7bkkhiex.bkt.clouddn.com/Alfred_parrot_log.jpg">
+![image](http://o7bkkhiex.bkt.clouddn.com/Alfred_parrot_log.jpg)
+
 
 
 ## 安装
@@ -13,7 +14,7 @@ $ npm install --global alfred-parrot
 
 ## 使用
 
-<img src="http://o7bkkhiex.bkt.clouddn.com/parrot_tutorial-min.gif">
+![image](http://o7bkkhiex.bkt.clouddn.com/parrot_tutorial-min.gif)
 
 
 输入 `fy` 然后输入需要查询的单词,  如: fy love; 回车复制翻译结果
