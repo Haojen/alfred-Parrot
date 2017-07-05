@@ -76,6 +76,7 @@ const parrot = {
 		const {url, appid, key, salt} = config[type];
 
 		const {query, targetLanguage} = parrot.checkUserDidCustomTargetLang(str, type);
+
 		const defaultParams = {
 			q: query,
 			salt: salt,
