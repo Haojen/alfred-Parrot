@@ -14,7 +14,7 @@ $ npm install --global alfred-parrot
 
 ## 使用
 
-![image](http://o7bkkhiex.bkt.clouddn.com/parrot_tutorial-min.gif)
+![image](http://o7bkkhiex.bkt.clouddn.com/ezgif.com-gif-maker%20%284%29.gif)
 
 
 输入 `fy` 然后输入需要查询的单词,  如: fy love; 回车复制翻译结果
