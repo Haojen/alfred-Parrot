@@ -53,8 +53,8 @@ const language_map = {
 			chineseText: '文言文'
 		},
 		jp: {
-			key: 'zh-CHS',
-			chineseText: ''
+			key: 'jp',
+			chineseText: '日语'
 		},
 		kor: {
 			key: ' kor',

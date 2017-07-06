@@ -75,6 +75,8 @@ const parrot = {
 	fetchTransResult(str, type = 'youdao') {
 		const {url, appid, key, salt} = config[type];
 
+		str = parrot.userWantPlaySound(str);
+
 		const {query, targetLanguage} = parrot.checkUserDidCustomTargetLang(str, type);
 
 		const defaultParams = {
@@ -157,7 +159,7 @@ const parrot = {
 			});
 
 			cb&&cb(result);
-			parrot.isPlaySound ? parrot.playSound(res.dst) : null;
+			parrot.isPlaySound ? parrot.playSound(res.trans_result[0].dst) : null;
 		}, err => {
 			cb&&cb([{
 				title: err,
