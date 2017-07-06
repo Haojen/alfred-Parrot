@@ -112,8 +112,8 @@
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>config_youdao</key>
-		<string>{"appid": "0d68776be7e9be0b","key":"MIbu7DGsOPdbatL9KmgycGx0qDOzQWCM"}</string>
+		<key>config_baidu</key>
+		<string>{"appid": "20170625000060222","key":"2dlAYT1dFruhnrQj7yWL"}</string>
 	</dict>
 	<key>version</key>
 	<string></string>
