@@ -1,6 +1,6 @@
 # alfred-parrot
 
-![image](./screenshot/alfred_icon.jpg)
+![image](./screenshot/new_parrot_icon.jpg)
 
 ## 👉 安装
 
