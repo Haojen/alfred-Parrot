@@ -98,23 +98,8 @@ const parrot = {
 		})
 	},
 
-	// 获取最终用户输入的Text
-	getTransLanguage(str, cb) {
-		const {appid, key} = config['youdao'];
-
-		if (!appid || !key) {
-			cb&&cb([{
-				title: '请先在 workflow 中配置有道翻译',
-				subtitle: '在尝试使用有道翻译时遇到了这个问题, 解决方法请看使用文档'
-			}]);
-
-			return;
-		}
-
-		str = parrot.userWantPlaySound(str);
-
-		// 用户指定了转换语言
-		parrot.fetchTransResult(str).then(res => {
+	getYoudaoResult(query, cb) {
+		parrot.fetchTransResult(query).then(res => {
 			let result;
 
 			if (res.query && res.web) {
@@ -148,39 +133,60 @@ const parrot = {
 					}
 				})
 			}
+
 			cb&&cb(result);
+
 			parrot.isPlaySound ? parrot.playSound(res.translation[0]):null;
 
-		}, () => {
-			const {appid, key} = config['baidu'];
-
-			if (!appid || !key) {
-				cb&&cb([{
-					title: '请先在 workflow 中配置百度翻译',
-					subtitle: '在尝试使用百度作为备用翻译时遇到了这个问题, 解决方法请看使用文档'
-				}]);
-
-				return
-			}
-
-			parrot.fetchTransResult(alfredIO.queryText, alfredIO.targetLanguage, 'baidu').then(res => {
-				let result = res.trans_result.map(res => {
-					return {
-						title: res.dst,
-						subtitle: res.src,
-						arg: res.dst,
-					}
-				});
-
-				cb&&cb(result);
-				parrot.isPlaySound ? parrot.playSound(res.dst):null;
-			}, err => {
-				cb&&cb([{
-					title: err,
-					arg: err
-				}])
-			});
+		}, err => {
+			cb&&cb([{
+				title: err,
+				arg: err
+			}])
 		})
+	},
+
+	getBaiduResult(query, cb) {
+		parrot.fetchTransResult(query, 'baidu').then(res => {
+			let result = res.trans_result.map(res => {
+				return {
+					title: res.dst,
+					subtitle: res.src,
+					arg: res.dst,
+				}
+			});
+
+			cb&&cb(result);
+			parrot.isPlaySound ? parrot.playSound(res.dst) : null;
+		}, err => {
+			cb&&cb([{
+				title: err,
+				arg: err
+			}])
+		});
+	},
+
+	// 获取最终用户输入的Text
+	getTransLanguage(query, cb) {
+		const yd = config['youdao'];
+		const bd = config['baidu'];
+
+		if (yd.appid && yd.key) {
+			parrot.getYoudaoResult(query, cb);
+			return
+		}
+
+		if (bd.appid && bd.key) {
+			parrot.getBaiduResult(query, cb);
+			return
+		}
+
+		if (!(yd.appid && yd.key && bd.appid && bd.key)) {
+			cb && cb([{
+				title: '请先在 workflow 中配置至少一个翻译接口',
+				subtitle: '貌似没有配置您的有道或者百度翻译接口, 或者配置格式错误, 解决方法请看使用文档'
+			}]);
+		}
 	},
 };
 
