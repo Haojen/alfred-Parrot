@@ -24,15 +24,6 @@ const language_map = {
 			key: 'es',
 			chineseText: '西班牙语'
 		},
-		th: {
-			key: 'th',
-			chineseText: ''
-		},
-		ara: {
-			key: 'ar',
-			chineseText: ''
-		},
-
 	},
 
 	baidu : {
