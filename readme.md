@@ -34,6 +34,8 @@ $ npm install --global alfred-parrot
 - 有道: `config_youdao: {"appid":"你的有道 appid", "key":"你的有道 key"}`
 - 百度: `config_baidu: {"appid":"你的百度 appid", "key":"你的百度 key"}`
 
+注: 如果同时配置了有道和百度, 会首先调用有道接口.
+
 ![image](./screenshot/parrot_config.gif)
 
 ## 💙 最后
