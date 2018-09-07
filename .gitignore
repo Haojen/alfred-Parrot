@@ -1,4 +1,6 @@
 node_modules
 .editorconfig
 .gitattributes
-.idea/workspace.xml
+.idea/
+.DS_Store
+

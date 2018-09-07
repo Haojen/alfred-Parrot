@@ -61,7 +61,7 @@ const parrot = {
 	// 检测用户是否要播放单词
 	userWantPlaySound(text) {
 		parrot.isPlaySound = text[0] === ':' || text[0] === '：';
-
+		
 		if (parrot.isPlaySound){
 			return text.slice(1)
 		}
@@ -138,7 +138,7 @@ const parrot = {
 
 			cb&&cb(result);
 
-			parrot.isPlaySound ? parrot.playSound(res.translation[0]):null;
+			parrot.isPlaySound ? parrot.playSound(res.translation[0]) : null;
 
 		}, err => {
 			cb&&cb([{
