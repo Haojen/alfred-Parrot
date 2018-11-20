@@ -2,7 +2,7 @@
 
 ![image](./screenshot/new_parrot_icon.jpg)
 
-## 👉 安装
+## 👉 Install (安装)
 
 ```
 $ npm install --global alfred-parrot
@@ -12,27 +12,27 @@ $ npm install --global alfred-parrot
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
-## 💻 使用
+## 💻 Use (使用)
 
 ![image](./screenshot/parrot_tutorial-min.gif)
 
-## 💪 其他特性
+## 💪 More features (其他特性)
 
 1. 朗读翻译结果, 输入 `fy` + `:`的形式, 如 `fy :thanks` ;
 2. 多语种转换, `fy` + `空格` + `需要转换的单词` + `to` + `目标语言`, 如英转日: `fy thanks to 日语` 或 `fy love to jp`;
 3. 复制翻译结果, 输入 `fy` 然后输入需要查询的单词,  如: fy love; 回车复制翻译结果
 
-## 🌵 支持的语言列表
+## 🌵 Language list supported (支持的语言列表)
 
-1. 英语
-2. 日语
-3. 韩语
-4. 法语
-5. 西班牙语
+1. 英语 (English)
+2. 日语 (Japen)
+3. 韩语 (Korea)
+4. 法语 (Franch)
+5. 西班牙语 (Spanish)
 
 目前先暂时开放上述几种语言, 后期会添加更多, 如果你有其他语种翻译需求, 也可以发起 issues 告知我
 
-## 😒 用前配置
+## 😒 Config (用前配置)
 > 自带的接口默认有调用频率限制, 很多人用的话可能会超出调用频率, 可以尝试配置自己的接口, 配置方式如下
 
 支持有道和百度, 个人推荐使用有道,注册方式如下:
@@ -53,6 +53,7 @@ $ npm install --global alfred-parrot
 
 如果遇到任何问题, 可以提交 issue , 你的反馈对我很重要!
 另外,喜欢的话不妨给个 Star 😍
+If you Like , please give me star
 
 ## License
 
