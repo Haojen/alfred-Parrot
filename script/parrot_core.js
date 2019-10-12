@@ -91,7 +91,7 @@ const parrot = {
 			sign: md5(appid + query + salt + key)
 		};
 
-		return alfy.fetch(url,{body: Object.assign(defaultParams, params)}).then(res => {
+		return alfy.fetch(url,{query: Object.assign(defaultParams, params)}).then(res => {
 			return new Promise((success, fail) => {
 				errorMap[res.errorCode||res.error_code]
 				? fail(errorMap[res.errorCode||res.error_code])

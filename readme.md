@@ -1,6 +1,9 @@
 # alfred-parrot
 
 ![image](./screenshot/new_parrot_icon.jpg)
+##  🎉 更新
+1. 支持 Alfred 4
+2. 支持 macOS Catalina
 
 ## 👉 安装
 
@@ -10,7 +13,7 @@ $ npm install --global alfred-parrot
 
 执行上述命令行后, 稍后会在 alfred workflow 中显示出安装后的 alfred-parrot
 
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+*Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 ## 💻 使用
 
