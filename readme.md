@@ -5,7 +5,7 @@
 1. 支持 Alfred 4
 2. 支持 macOS Catalina
 
-## 👉 Install (安装)
+## Install (安装)
 
 ```
 $ npm install --global alfred-parrot
@@ -35,7 +35,7 @@ $ npm install --global alfred-parrot
 
 目前先暂时开放上述几种语言, 后期会添加更多, 如果你有其他语种翻译需求, 也可以发起 issues 告知我
 
-## 😒 Config (用前配置)
+## Config (用前配置)
 > 自带的接口默认有调用频率限制, 很多人用的话可能会超出调用频率, 可以尝试配置自己的接口, 配置方式如下
 
 支持有道和百度, 个人推荐使用有道,注册方式如下:
@@ -52,11 +52,9 @@ $ npm install --global alfred-parrot
 
 ![image](./screenshot/parrot_config.gif)
 
-## 💙 最后
+## 最后
 
-如果遇到任何问题, 可以提交 issue , 你的反馈对我很重要!
-另外,喜欢的话不妨给个 Star 😍
-If you Like , please give me star
+如果遇到任何问题, 可以提交 issue , 你的反馈对我很重要
 
 ## License
 
