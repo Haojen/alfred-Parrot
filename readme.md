@@ -5,7 +5,7 @@
 1. 支持 Alfred 4+
 2. 支持 macOS Catalina+
 
-## Install (安装)
+## Install 安装
 
 ```
 $ npm install --global alfred-parrot
