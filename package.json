@@ -32,12 +32,12 @@
     "翻译"
   ],
   "dependencies": {
-    "alfy": "0.9.1",
+    "alfy": "1.1.0",
     "md5": "^2.2.1"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^2.4.0",
+    "ava": "^5.2.0",
     "xo": "^0.17.0"
   }
 }
